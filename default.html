@@ -7,11 +7,12 @@
 <script type="text/javascript" src="resources/jquery/jquery-1.9.1.min.js"></script>
 <script type="text/javascript" src="resources/jquery/jquery-ui-1.10.1.custom.min.js"></script>
 <link rel="stylesheet" type="text/css" media="screen" href="resources/css/smoothness/jquery.ui.combogrid.css"/>
-<script type="text/javascript" src="resources/plugin/jquery.ui.combogrid-1.6.2.js"></script>
+<script type="text/javascript" src="resources/plugin/jquery.ui.combogrid-1.6.4.js"></script>
 <script>
 jQuery(document).ready(function(){
 		$( "#project" ).combogrid({
-		url: 'server.php',
+		url: 'server.json',
+		//url: 'server.php',
 		debug:true,
     //replaceNull: true,
 		colModel: [{'columnName':'id','width':'10','label':'id'}, {'columnName':'name','width':'60','label':'title'},{'columnName':'author','width':'30','label':'author'}],
